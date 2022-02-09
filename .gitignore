@@ -214,3 +214,4 @@ cython_debug/
 /.idea/sonarlint/*
 
 file/*
+!file/__init__

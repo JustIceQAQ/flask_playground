@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "21c22ad7-499d-46a5-8d43-dae8d9e87c41",
+		"name": "flask_playground",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "video",
+			"item": [
+				{
+					"name": "GET video",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/video/:filename",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"video",
+								":filename"
+							],
+							"variable": [
+								{
+									"key": "filename",
+									"value": "CreateCircle-1.mp4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST video",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/JustIceQAQ/Downloads/CreateCircle-1.mp4"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/video/:filename",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"video",
+								":filename"
+							],
+							"variable": [
+								{
+									"key": "filename",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": ""
+		}
+	]
+}

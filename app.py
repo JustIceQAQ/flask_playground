@@ -4,8 +4,13 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def hello_world():
+def hello_world_html():
     return "<p>Hello, World!</p>"
+
+
+@app.route("/json")
+def hello_world_json():
+    return {"Hello ": "World! "}
 
 
 app.run(host="0.0.0.0", port=5000)

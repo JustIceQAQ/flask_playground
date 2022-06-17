@@ -1,0 +1,6 @@
+.dockerignore
+.env
+.gitignore
+.idea/
+dockerfile
+build_image.bat
